@@ -93,6 +93,11 @@
             const carousel = document.querySelector('.carousel');
             const offset = -currentSlide * 100; // Move by 100% for each slide
             carousel.style.transform = `translateX(${offset}%)`;
+            
+            setInterval(function() {
+    moveSlide(1); // Automatically move to the next slide
+}, 3000); // Change every 3 seconds
+
         }
     </script>
 </body>
